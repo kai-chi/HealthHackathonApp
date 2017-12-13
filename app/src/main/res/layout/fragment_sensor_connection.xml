@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorPrimary"
+             tools:context="kaichi.healthhackathon.SensorConnectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_bottom_padding"
+        android:text="@string/start"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/text_size_big"/>
+
+    <ImageButton
+        android:id="@+id/dropImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/button_bottom_padding"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/drop_image_description"
+        android:cropToPadding="false"
+        android:src="@drawable/drop"/>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorPrimary"
+             tools:context="kaichi.healthhackathon.RecommendationFragment" android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_fab_margin"
+        android:layout_marginRight="@dimen/small_fab_margin"
+        android:gravity="center"
+        android:text="@string/recommendations"
+        android:textSize="@dimen/text_size_big_small"/>
+
+    <TextView
+        android:id="@+id/subresultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_fab_margin"
+        android:layout_marginRight="@dimen/small_fab_margin"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+</LinearLayout>
